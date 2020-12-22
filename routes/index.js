@@ -4,6 +4,9 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
+  console.log('Username', req.body.username)
+  console.log('Password', req.body.password)
 });
+
 
 module.exports = router;
